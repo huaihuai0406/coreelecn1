@@ -91,9 +91,9 @@ if [ -d $BOOT_ROOT/device_trees ]; then
   cp -p $SYSTEM_ROOT/usr/share/bootloader/device_trees/*.dtb $BOOT_ROOT/device_trees/
 fi
 
-if [ -f $SYSTEM_ROOT/usr/share/bootloader/aml_autoscript ]; then
-    echo "Updating aml_autoscript..."
-    cp -p $SYSTEM_ROOT/usr/share/bootloader/aml_autoscript $BOOT_ROOT
+if [ -f $SYSTEM_ROOT/usr/share/bootloader/s905_autoscript ]; then
+    echo "Updating s905_autoscript..."
+    cp -p $SYSTEM_ROOT/usr/share/bootloader/s905_autoscript $BOOT_ROOT
     sleep 1
 fi
 
