@@ -29,6 +29,9 @@ show_config() {
   config_message="$config_message\n\n Graphic configuration:"
   config_message="$config_message\n $dashes$dashes"
 
+  echo "-------------------"
+  echo $DISPLAYSERVER
+  echo "-------------------"
   if [ "$DISPLAYSERVER" = "x11" ] ; then
     config_message="$config_message\n - Xorg Graphic Drivers:\t\t $GRAPHIC_DRIVERS"
     config_message="$config_message\n - XORG Composite support:\t\t $COMPOSITE_SUPPORT"

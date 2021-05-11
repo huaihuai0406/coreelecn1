@@ -158,6 +158,7 @@ for addon in $(echo ${addons} | tr ' ' '\n' | sort -u); do
   listcontains "${addons_drop}" "${addon}" || wanted_addons+=" ${addon}"
 done
 
+
 if [ "${show_only}" = "yes" ]; then
   for addon in ${wanted_addons}; do
     echo ${addon}
